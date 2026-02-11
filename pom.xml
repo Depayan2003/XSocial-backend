@@ -11,7 +11,7 @@
 	<groupId>com.depayan</groupId>
 	<artifactId>XSocial</artifactId>
 	<version>1.0</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>XSocial</name>
 	<description>CORS_Example</description>
 	<url/>
@@ -89,14 +89,7 @@
         <scope>runtime</scope>
         <optional>true</optional>
     </dependency>
-
-		<!-- External Tomcat (WAR only) -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-tomcat</artifactId>
-        <scope>provided</scope>
-    </dependency>
-
+    
 		<!-- Testing -->
     <dependency>
         <groupId>org.springframework.boot</groupId>
