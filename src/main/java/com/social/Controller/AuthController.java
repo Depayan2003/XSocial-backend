@@ -24,6 +24,7 @@ public class AuthController {
     public ResponseEntity<?> sendOtp(
             @RequestBody @Valid SendOtpRequest request
     ) {
+		System.out.println("OTP endpoint HIT");
         authService.sendOtp(request.email());
         return ResponseEntity.ok(
                 Map.of("message", "OTP sent successfully")
