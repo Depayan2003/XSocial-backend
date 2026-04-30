@@ -18,7 +18,7 @@ public class CorsConfig {
 
         config.setAllowedOrigins(List.of(
                 "http://localhost:5173",
-                "https://x-social-frontend.vercel.app"
+                "https://xsocial-frontend.vercel.app"
         ));
 
         config.setAllowedMethods(List.of(
