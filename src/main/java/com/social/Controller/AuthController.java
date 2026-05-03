@@ -50,7 +50,20 @@ public class AuthController {
                 Map.of("message", "User registered successfully")
         );
     }
+	@PostMapping("/register")
+	public ResponseEntity<?> register(
+        @RequestBody @Valid RegisterRequest request
+	) {
+    	authService.register(
+            request.email(),
+            request.password(),
+            request.name()
+    	);
 
+    	return ResponseEntity.ok(
+            Map.of("message", "User registered successfully")
+    	);
+	}
     // =========================
     // 3️⃣ LOGIN (PASSWORD)
     // =========================
