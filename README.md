@@ -1,6 +1,6 @@
 # XSocial Backend
 
-This is the Frontend for XSocial social media app
+This is the Backend for XSocial social media app
 
 ## Frontend Repo
 https://github.com/Depayan2003/XSocial-frontend
