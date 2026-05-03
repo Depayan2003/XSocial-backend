@@ -7,4 +7,6 @@ public interface AuthService {
     void verifyOtpAndRegister(String email, String otp, String rawPassword,String name);
 
     String login(String email, String password);
+
+    void register(String email, String password, String name);
 }
