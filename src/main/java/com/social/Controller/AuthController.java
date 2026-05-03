@@ -85,6 +85,12 @@ public class AuthController {
     // REQUEST DTOs (INNER)
     // =========================
 
+	public record RegisterRequest(
+    	@Email @NotBlank String email,
+    	@NotBlank String password,
+    	@NotBlank String name
+	) {}
+
     public record SendOtpRequest(
             @Email @NotBlank String email
     ) {}
